@@ -6,6 +6,14 @@ Rails 5.1
 
 sqlite3
 
+
+rake db:drop db:create db:migrate
+
+rake db:seed
+
+rails s
+
+
 Спеки: bundle exec rspec
 
 Задачи на отправку сообщений: app/jobs/send_message_job.rb
@@ -14,11 +22,7 @@ sqlite3
 
 Экшен new в SendController добавляет в очередь новую задачу
 
-rake db:drop db:create db:migrate
 
-rake db:seed
-
-rails s
 
 Features:
 
