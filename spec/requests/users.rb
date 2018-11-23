@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Users API' do
+RSpec.describe 'Send API' do
   # Initialize the test data
   let!(:messenger) { create(:messenger) }
   let!(:users) { create_list(:user, 20, messenger_id: messenger.id) }
