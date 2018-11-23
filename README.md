@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby 2.5.3
+Rails 5.1
+sqlite3
 
-Things you may want to cover:
+Спеки: bundle exec rspec
 
-* Ruby version
+Задачи на отправку сообщений: app/jobs/send_message_job.rb
+Очереди: Sidekiq + Redis
+Экшен new в SendController добавляет в очередь новую задачу
 
-* System dependencies
+rake db:drop db:create db:migrate
 
-* Configuration
+rake db:seed
 
-* Database creation
+rails s
 
-* Database initialization
+Features:
 
-* How to run the test suite
+Отправить запрос на сообщение :3000/send user_id=<ид> text=<сообщение> date=<дата например число.месяц.год>
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
