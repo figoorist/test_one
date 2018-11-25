@@ -10,6 +10,6 @@ require 'faker'
 3.times do
   messenger = Messenger.create(name: Faker::Pokemon.location)
   3.times do
-    User.create(name: Faker::Pokemon.name, messenger: messenger)
+    User.create(name: Faker::Pokemon.name, messenger: messenger, password: '1111')
   end
 end
